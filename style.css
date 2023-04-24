@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Manrope");
+@import url("https://fonts.googleapis.com/css?family=Manrope&display=swap");
 
 :root {
 	--Light-cyan: hsl(193, 38%, 86%);
@@ -6,6 +6,7 @@
 	--Grayish-Blue: hsl(217, 19%, 38%);
 	--Dark-Grayish-Blue: hsl(217, 19%, 24%);
 	--Dark-Blue: hsl(218, 23%, 16%);
+	--body-font: "Manrope", sans-serif;
 }
 
 * {
@@ -15,6 +16,7 @@
 }
 
 body {
+	font-family: var(--body-font);
 	display: flex;
 	background-color: var(--Dark-Blue);
 	align-items: center;
@@ -30,14 +32,13 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	min-width: 200px;
+	width: 350px;
 	height: 350px;
-	margin-inline: 3rem;
 	border-radius: 12px;
-	/* gap: 1em; */
 }
 
 .advice-num {
+	text-transform: uppercase;
 	margin-top: 2em;
 	color: var(--Neon-Green);
 }
@@ -46,7 +47,12 @@ body {
 	font-size: 28px;
 	color: var(--Light-cyan);
 	font-weight: 800;
-	margin-inline: 1rem;
+	margin-inline: 0.5rem;
+}
+
+.line {
+	width: 90%;
+	padding-bottom: 3rem;
 }
 
 .button {
@@ -58,5 +64,6 @@ body {
 	width: 50px;
 	height: 50px;
 	border-radius: 50px;
+	cursor: pointer;
 	bottom: -25px;
 }
